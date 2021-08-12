@@ -1,0 +1,39 @@
+{
+	"id": "dc1b1a7c-137d-42dc-9f7e-985058db740a",
+	"name": "GradebookVaselmeENV",
+	"values": [
+		{
+			"key": "URL",
+			"value": "https://gradebook-api.vivifyideas.com/api",
+			"enabled": true
+		},
+		{
+			"key": "TOKEN",
+			"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9ncmFkZWJvb2stYXBpLnZpdmlmeWlkZWFzLmNvbVwvYXBpXC9sb2dpbiIsImlhdCI6MTYyODc4NTQxNCwiZXhwIjoxNjI4ODIxNDE0LCJuYmYiOjE2Mjg3ODU0MTQsImp0aSI6IlFNbklGWENzbVlwYURPbHUiLCJzdWIiOjMxOSwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSJ9.-6cYokjHQ_AcUqp8LA3y1MU2LYVFEL3ahdNd-hGWuxY",
+			"enabled": true
+		},
+		{
+			"key": "FIRSTNAME",
+			"value": "Kosta",
+			"enabled": true
+		},
+		{
+			"key": "LASTNAME",
+			"value": "Rakovic",
+			"enabled": true
+		},
+		{
+			"key": "EMAIL",
+			"value": "benkija1234@gmail.com",
+			"enabled": true
+		},
+		{
+			"key": "PASSWORD",
+			"value": "asd123456",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2021-08-12T17:16:25.365Z",
+	"_postman_exported_using": "Postman/7.36.5"
+}

@@ -1,0 +1,162 @@
+{
+	"info": {
+		"_postman_id": "673075c8-c4b8-4dfb-bac7-79acdc082640",
+		"name": "GradebookVaseIme",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "{{EMAIL}}",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "{{PASSWORD}}",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/login",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"login"
+					]
+				},
+				"description": "Login route for GradebookVaseIme"
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "{{EMAIL}}",
+							"type": "text"
+						},
+						{
+							"key": "first_name",
+							"value": "{{FIRSTNAME}}",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "{{LASTNAME}}",
+							"type": "text"
+						},
+						{
+							"key": "terms_conditions",
+							"value": "1",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/register",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"register"
+					]
+				},
+				"description": "Register route for GradebookVaseIme"
+			},
+			"response": []
+		},
+		{
+			"name": "AddGradebook-Positive",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{TOKEN}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"istorija2\",\n    \"professor_id\": \"101\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/gradebooks/store",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"gradebooks",
+						"store"
+					]
+				},
+				"description": "Route for adding gradebook"
+			},
+			"response": []
+		},
+		{
+			"name": "AddGradebook-Negative",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{TOKEN}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"2\",\n    \"professor_id\": \"101\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/gradebooks/store",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"gradebooks",
+						"store"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
